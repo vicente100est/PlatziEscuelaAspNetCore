@@ -1,9 +1,13 @@
 ﻿
+@model School
+
 @{
-    ViewData["Title"] = "index";
+    ViewData["Title"] = "School Info";
+    Layout = "_Layout";
 }
 
-<h1>index</h1>
-<h2>Escuela</h2>
-<h2>Nombre:</h2>
-<p><strong>Año de Fundación: </strong></p>
+<h1>@ViewData["Title"]</h1>
+
+<h2>Escuela: @Model.IdSchool</h2>
+<h2>Nombre: @Model.NameSchool</h2>
+<p><strong>Año de Fundación: @Model.YearFoundationSchool</strong></p>
